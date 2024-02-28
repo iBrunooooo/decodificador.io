@@ -1,0 +1,246 @@
+@import url('reset.css');
+@import url('vars.css');
+@import url('footer.css');
+
+* {
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+}
+
+body {
+    background-color: var(--cor-bg-claro);
+}
+
+.conteudo {
+    width: 100vw;
+}
+
+/* Início do cabeçalho. */
+
+.cabecalho {
+    display: flex;
+    height: 6rem;
+}
+
+.cabecalho__logo {
+    width: 2rem;
+    margin-left: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    .cabecalho {
+        height: 12rem;
+    }
+
+    .cabecalho__logo {
+        width: 2rem;
+        margin: 0rem 0rem 2rem 2.5rem;
+    }
+
+}
+
+/* Fim do cabeçalho. */
+
+/* Início da área de inserção do texto e aviso */
+
+.primeira-sessao {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-input {
+    color: var(--cor-azul-principal);
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 0rem 0.5rem;
+    border: none;
+    background-color: transparent;
+    width: 95%;
+    height: 15.5rem;
+    line-height: 3rem;
+    text-transform: lowercase;
+}
+
+.text-input::placeholder {
+    color: var(--cor-azul-principal);
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 0rem 0.5rem;
+    text-transform: none;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0rem 1.0rem;
+    column-gap: 0.2rem;
+}
+
+.img-atencao {
+    height: 0.75rem;
+}
+
+.mensagem-atencao {
+    font-size: 0.75rem;
+    color: var(--cor-cinza-aviso);
+    margin: 1rem 0rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    .text-input {
+        margin: 0rem 1.5rem;
+    }
+
+    .form-group {
+        margin: 0rem 1.5rem;
+    }
+}
+
+/* Fim da área de inserção do texto e aviso */
+
+/* Início da estilização dos botões */
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: center;
+}
+
+.botoes button {
+    width: 90%;
+    padding: 1.5rem;
+    border-radius: 24px;
+}
+
+.cript-btn {
+    background-color: var(--cor-azul-principal);
+    color: #FFFFFF;
+    border: none;
+}
+
+.descript-e-copy-btn {
+    background: transparent;
+    color: var(--cor-azul-principal);
+    border: 1px solid var(--cor-azul-principal);
+}
+
+@media screen and (min-width: 768px) {
+
+    .botoes {
+        flex-direction: row;
+        margin: 0rem 2.5rem;
+        column-gap: 2rem;
+    }
+
+}
+
+/* Fim da estilização dos botões */
+
+/* Início da estilização da segunda sessão */
+
+.segunda-sessao {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem 2rem 0rem 2rem;
+    padding: 2rem 0rem;
+    background-color: #FFFFFF;
+    border-radius: 24px;
+}
+
+.boneco-img {
+    display: none;
+}
+
+span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--cor-cinza-aviso);
+    line-height: 1.5rem;
+}
+
+.orientacao {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    color: var(--cor-cinza-claro);
+    margin: 1rem 0rem;
+}
+
+.copiar-btn {
+    width: 90%;
+    padding: 1.2rem;
+    border-radius: 16px;
+    margin-top: 3rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Fim da estilização da segunda sessão */
+
+
+
+@media screen and (min-width: 1440px) {
+
+    main {
+        display: flex;
+    }
+
+    .cabecalho {
+        width: 10%;
+        display: inline;
+        text-align: center;
+    }
+
+    .cabecalho__logo {
+        margin: 3rem 0rem 0rem 0rem;
+    }
+
+    .primeira-sessao {
+        width: 55%;
+        justify-content: space-around;
+    }
+
+    .text-input {
+        height: 60vh;
+        margin-top: 8rem;
+    }
+
+    .botoes {
+        align-items: end;
+    }
+
+    .segunda-sessao {
+        /* width: 35%; */
+        /* margin: 4rem 4rem 0rem 4rem; */
+        /* padding: 4rem; */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .boneco-img {
+        display: inline;
+    }
+
+    .container-resultado {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60vh;
+        margin-top: 8rem;
+    }
+
+    .cript-btn:hover {
+        text-decoration-line: underline;
+    }
+    
+    .descript-e-copy-btn:hover {
+        text-decoration-line: underline;
+    }
+}

@@ -1,0 +1,7 @@
+Decodificador de texto: por onde começar:
+
+    // Infográfico; 
+    // Passo a passo; 
+    // HTML; 
+    // JavaScript; e 
+    // CSS.

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(De) codificador de texto - ONE.</title>
+
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <link rel="shortcut icon" href="./assets/image/logo-alura.svg" type="image/x-icon">
+
+    <script src="./assets/main.js" defer></script>
+</head>
+<body>
+
+    <main class="conteudo">
+
+        <header class="cabecalho">
+            <img src="./assets/image/logo-alura.svg" alt="Logo da Alura." class="cabecalho__logo">
+        </header>
+
+        <section class="primeira-sessao">
+            <textarea id="mensagemInicial" class="text-input" placeholder="Digite seu texto aqui."></textarea>
+            <div class="atencao-e-botoes">
+                <div class="form-group">
+                    <img src="./assets/image/atencao-image.svg" alt="Ícone de atenção." class="img-atencao">
+                    <label for="text-input" class="mensagem-atencao">Digite apenas letras minúsculas e sem acento.</label>
+                </div>
+                <div class="botoes">
+                    <button onclick="criptografar ()" id="cript" class="cript-btn">
+                        Criptografar
+                    </button>
+                    <button onclick="descriptografar ()" id="descript" class="descript-e-copy-btn">
+                        Descriptografar
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="segunda-sessao">
+            <div id="container-resultado">
+                <img src="./assets/image/boneco-img.svg" alt="Figura." class="boneco-img">
+                <br>
+                <span>
+                    Nenhuma mensagem encontrada
+                </span>
+                <p class="orientacao">
+                    Digite um texto que você deseja criptografar ou descriptografar.
+                </p>
+                <button onclick="copiarTexto ()" class="descript-e-copy-btn copiar-btn hidden">
+                    Copiar
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+
+        <div class="div-rodape">
+            <h3 class="titulo-rodape">Desenvolvido por Bruno Alves.</h3>
+        </div>
+
+        <ul class="rodape__lista">
+            <li class="rodape__lista__rede-social">
+                <a href="https://www.instagram.com/ibrunooooo/" target="_blank">
+                    <img src="./assets/image/instagram-logo.svg" alt="Logo do Instagram." class="rede-social__img">
+                    Instagram
+                </a>
+            </li>
+            <li class="rodape__lista__rede-social">
+                <a href="https://github.com/iBrunooooo?tab=repositories" target="_blank">
+                    <img src="./assets/image/github-logo.svg" alt="Logo do GitHub" class="rede-social__img">
+                    GitHub
+                </a>
+            </li>
+            <li class="rodape__lista__rede-social">
+                <a href="https://www.linkedin.com/in/ibrunoalves/" target="_blank">
+                    <img src="./assets/image/linkedin-logo.svg" alt="Logo do linkedIn." class="rede-social__img">
+                    LinkedIn
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+</body>
+</html>

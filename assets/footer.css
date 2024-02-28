@@ -1,0 +1,49 @@
+/* Início do footer. */
+
+.rodape {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0rem;
+}
+
+.div-rodape {
+    display: flex;
+    text-align: center;
+}
+
+.rede-social__img {
+    height: 2rem;
+}
+
+.rodape__lista {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape__lista__rede-social a {
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+}
+
+.titulo-rodape {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: var(--fonte-principal);
+    margin: 2rem 2rem 0rem 2rem;
+}
+
+/* Fim do footer. */
+
+@media screen and (min-width: 768px) {
+    .rodape__lista {
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
